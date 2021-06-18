@@ -1,0 +1,37 @@
+//html,
+//body {
+//  padding: 0;
+//  margin: 0;
+//  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+//    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+//}
+//
+//a {
+//  color: inherit;
+//  text-decoration: none;
+//}
+//
+//* {
+//  box-sizing: border-box;
+//}
+@import '~@carbon/themes/scss/themes';
+$carbon--theme: $carbon--theme--g100;
+//$carbon--theme: $carbon--theme--white;
+@include carbon--theme();
+
+@import '../node_modules/carbon-components/scss/components/ui-shell/ui-shell';
+@import '../node_modules/carbon-components/scss/components/button/button';
+@import '../node_modules/carbon-components/scss/components/content-switcher/content-switcher';
+@import '../node_modules/carbon-components/scss/components/tile/tile';
+$css--reset: true;
+.bx--content-switcher-btn {
+  width: 18rem;
+}
+
+.bx--tile {
+  //color: #ffffff;
+  color: #ffffff;
+  width: 72rem;
+  height: 40rem;
+  top: 2rem;
+}
