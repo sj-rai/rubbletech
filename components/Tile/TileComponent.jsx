@@ -3,6 +3,7 @@ import {
     ClickableTile, Tile
 } from 'carbon-components-react'
 import styles from './tile.module.scss'
+import Image from "next/image";
 
 export default function TileComponent(props) {
     return (
@@ -60,8 +61,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="#"
                                         ><h1>
-                                                {props.content}
+                                                E-WASTE
                                         </h1>
+                                                {/*<Image src="/e-waste.jpg" alt="E-Waste" width={"200px"} height={"200px"} />*/}
                                                 {/*Content about this here*/}
                                         </ClickableTile>
                                 </div>

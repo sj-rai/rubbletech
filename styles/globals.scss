@@ -33,8 +33,16 @@ $css--reset: true;
   //color: #ffffff;
   color: #ffffff;
   width: 25.5rem;
-  height: 15.5rem;
+  height: 25.5rem;
   top: 2rem;
   //margin-right: 2rem;
   //margin-left: 2rem;
+}
+td {
+  padding: 10px;
+  border: 1px solid white;
+}
+th {
+  padding: 10px;
+  border: 1px solid white;
 }
