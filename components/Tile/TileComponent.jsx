@@ -4,6 +4,7 @@ import {
 } from 'carbon-components-react'
 import styles from './tile.module.scss'
 import Image from "next/image";
+import { ReactComponent as BIOSVG } from '../../public/biohazard.svg';
 
 export default function TileComponent(props) {
     return (
@@ -13,7 +14,12 @@ export default function TileComponent(props) {
                                 <div className="bx--col">
                                         <ClickableTile
                                             href="#"
-                                        ><h1>
+                                        >
+                                        {/*<BIOSVG width={50} height={100} fill='#fff'/>*/}
+                                        <div className={styles.icons}>
+                                                <Image src="/biohazard.svg" alt="E-Waste" layout={"fill"}/>
+                                        </div>
+                                        <h1>
                                                 <div className={styles.text}>
                                                         HAZARDOUS WASTE
                                                 </div>
@@ -70,7 +76,8 @@ export default function TileComponent(props) {
                                 <div className="bx--col">
                                         <ClickableTile
                                             href="#"
-                                        ><h1>
+                                        >{/*<Image src="/ewaste.png" alt="E-Waste" width={"200px"} height={"200px"} />*/}
+                                        <h1>
                                                 <div className={styles.text}>
                                                         E-WASTE
                                                 </div>

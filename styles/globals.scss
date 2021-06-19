@@ -23,6 +23,12 @@ $carbon--theme: $carbon--theme--g100;
 @import '../node_modules/carbon-components/scss/components/button/button';
 @import '../node_modules/carbon-components/scss/components/content-switcher/content-switcher';
 @import '../node_modules/carbon-components/scss/components/tile/tile';
+@import '../node_modules/carbon-components/scss/components/form/form';
+@import '../node_modules/carbon-components/scss/components/text-area/text-area';
+@import '../node_modules/carbon-components/scss/components/text-input/text-input';
+@import '../node_modules/carbon-components/scss/components/button/button';
+@import '../node_modules/carbon-components/scss/components/select/select';
+
 @import '~@carbon/grid/scss/grid';
 $css--reset: true;
 .bx--content-switcher-btn {
