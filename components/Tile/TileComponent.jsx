@@ -14,7 +14,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="#"
                                         ><h1>
-                                                HAZARDOUS WASTE
+                                                <div className={styles.text}>
+                                                        HAZARDOUS WASTE
+                                                </div>
                                         </h1>
                                                 {/*Content about this here*/}
                                         </ClickableTile>
@@ -23,7 +25,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="#"
                                         ><h1>
-                                                RECYCLABLE WASTE
+                                                <div className={styles.text}>
+                                                        RECYCLABLE WASTE
+                                                </div>
                                         </h1>
                                                 {/*Content about this here*/}
                                         </ClickableTile>
@@ -32,7 +36,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="#"
                                         ><h1>
-                                                LIQUID OR SOLID HOUSEHOLD WASTE
+                                                <div className={styles.text}>
+                                                        LIQUID OR SOLID HOUSEHOLD WASTE
+                                                </div>
                                         </h1>
                                                 {/*Content about this here*/}
                                         </ClickableTile>
@@ -43,7 +49,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="#"
                                         ><h1>
-                                                GREEN WASTE
+                                                <div className={styles.text}>
+                                                        GREEN WASTE
+                                                </div>
                                         </h1>
                                                 {/*Content about this here*/}
                                         </ClickableTile>
@@ -52,7 +60,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="/biomedical-waste"
                                         ><h1>
-                                                BIOMEDICAL WASTE
+                                                <div className={styles.text}>
+                                                        BIOMEDICAL WASTE
+                                                </div>
                                         </h1>
                                                 {/*Content about this here*/}
                                         </ClickableTile>
@@ -61,7 +71,9 @@ export default function TileComponent(props) {
                                         <ClickableTile
                                             href="#"
                                         ><h1>
-                                                E-WASTE
+                                                <div className={styles.text}>
+                                                        E-WASTE
+                                                </div>
                                         </h1>
                                                 {/*<Image src="/e-waste.jpg" alt="E-Waste" width={"200px"} height={"200px"} />*/}
                                                 {/*Content about this here*/}
