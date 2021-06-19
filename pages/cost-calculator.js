@@ -2,6 +2,7 @@ import React from "react";
 import {
   Form,
   TextInput,
+  NumberInput,
   TextArea,
   Select,
   Button,
@@ -15,41 +16,91 @@ export default function costCalculator() {
     <Layout>
       <div className={`${styles.container} ${styles.costCalculator}`}>
         <Form>
+          <div className={styles.calcpage}>
+            Please enter approx waste in Kg
+          </div>
+          <br /> <br />
           <div style={{ marginBottom: "2rem" }}>
-            <TextInput
-              helperText="Optional helper text here; if message is more than one line text should wrap (~100 character count maximum)"
-              id="test2"
-              invalidText="Invalid error message."
-              labelText="Text input label"
-              placeholder="Placeholder text"
+            <NumberInput
+              id="paper"
+              // invalid="Invalid error message."
+              label="Paper"
+              placeholder="in kg"
+              min={0}
+              max={100}
             />
           </div>
           <div style={{ marginBottom: "2rem" }}>
-            <TextArea
-              cols={50}
-              helperText="Optional helper text here; if message is more than one line text should wrap (~100 character count maximum)"
-              id="test5"
-              invalidText="Invalid error message."
-              labelText="Text area label"
-              placeholder="Placeholder text"
-              rows={4}
+            <NumberInput
+              id="metal"
+              // invalid="Invalid error message."
+              label="Metal"
+              placeholder="in kg"
+              min={0}
+              max={100}
             />
           </div>
           <div style={{ marginBottom: "2rem" }}>
-            <Select
-              defaultValue="placeholder-item"
-              id="select-1"
-              invalidText="This is an invalid error message."
-              labelText="Select"
-            >
-              <SelectItem text="Option 1" value="option-1" />
-              <SelectItem text="Option 2" value="option-2" />
-              <SelectItem text="Option 3" value="option-3" />
-            </Select>
+            <NumberInput
+              id="glass"
+              // invalid="Invalid error message."
+              label="Glass"
+              placeholder="in kg"
+              min={0}
+              max={100}
+            />
           </div>
-          <Button kind="primary" tabIndex={0} type="submit">
-            Submit
+          <div style={{ marginBottom: "2rem" }}>
+            <NumberInput
+              id="plastic"
+              // invalid="Invalid error message."
+              label="Plastic"
+              placeholder="in kg"
+              min={0}
+              max={100}
+            />
+          </div>
+          <div style={{ marginBottom: "2rem" }}>
+            <NumberInput
+              id="ewaste"
+              // invalid="Invalid error message."
+              label="E-waste"
+              placeholder="in kg"
+              min={0}
+              max={100}
+            />
+          </div>
+          <div style={{ marginBottom: "2rem" }}>
+            <NumberInput
+              id="biode"
+              // invalid="Invalid error message."
+              label="Bio-degradable waste"
+              placeholder="in kg"
+              min={0}
+              max={100}
+            />
+          </div>
+          <div style={{ marginBottom: "2rem" }}>
+            <NumberInput
+              id="other"
+              // invalid="Invalid error message."
+              label="Other"
+              placeholder="in kg"
+              min={0}
+              max={100}
+            />
+          </div>
+          <Button
+            kind="primary"
+            tabIndex={0}
+            type="submit"
+          >
+            Calculate
           </Button>
+          <br /><br /><br />
+          <div className={styles.calcpage}>
+            Total approximate cost:
+          </div>
         </Form>
       </div>
     </Layout>

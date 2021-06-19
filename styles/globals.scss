@@ -25,6 +25,7 @@ $carbon--theme: $carbon--theme--g100;
 @import '../node_modules/carbon-components/scss/components/form/form';
 @import '../node_modules/carbon-components/scss/components/text-area/text-area';
 @import '../node_modules/carbon-components/scss/components/text-input/text-input';
+@import '../node_modules/carbon-components/scss/components/number-input/number-input';
 @import '../node_modules/carbon-components/scss/components/button/button';
 @import '../node_modules/carbon-components/scss/components/select/select';
 
@@ -44,7 +45,7 @@ $css--reset: true;
   //margin-left: 2rem;
 }
 .bx--label {
-  font-size: 14px;
+  font-size: 20px;
 }
 td {
   padding: 10px;
