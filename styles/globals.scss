@@ -20,7 +20,6 @@ $carbon--theme: $carbon--theme--g100;
 @include carbon--theme();
 
 @import '../node_modules/carbon-components/scss/components/ui-shell/ui-shell';
-@import '../node_modules/carbon-components/scss/components/button/button';
 @import '../node_modules/carbon-components/scss/components/content-switcher/content-switcher';
 @import '../node_modules/carbon-components/scss/components/tile/tile';
 @import '../node_modules/carbon-components/scss/components/form/form';
@@ -43,6 +42,9 @@ $css--reset: true;
   top: 2rem;
   //margin-right: 2rem;
   //margin-left: 2rem;
+}
+.bx--label {
+  font-size: 14px;
 }
 td {
   padding: 10px;
