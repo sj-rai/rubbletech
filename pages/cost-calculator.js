@@ -93,7 +93,7 @@ export default function costCalculator() {
           <Button
             kind="primary"
             tabIndex={0}
-            type="submit"
+          // type="submit"
           >
             Calculate
           </Button>
