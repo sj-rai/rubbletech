@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import React, {useState} from 'react'
 
+import Layout from "../components/Layout/Layout";
 import Nav from '../components/Nav/Nav'
 import TileComponent from '../components/Tile/TileComponent'
 import ContentSwitcherComponent from "../components/ContentSwitcher/ContentSwitcherComponent";
@@ -16,10 +17,12 @@ export default function Home() {
         setContentForTile(value)
     }
     return (
+        <Layout>
         <div className={styles.container}>
-            <div className={styles.nav}>
-                <Nav />
-            </div>
+        {/*<Layout>*/}
+            {/*<div className={styles.nav}>*/}
+            {/*    <Nav />*/}
+            {/*</div>*/}
             {/*<ContentSwitcherComponent*/}
             {/*    callBackFromComponent = {receiveTileContent}*/}
             {/*/>*/}
@@ -27,6 +30,8 @@ export default function Home() {
             <TileComponent
                 content={contentForTile}
             />
+        {/*</Layout>*/}
         </div>
+        </Layout>
     )
 }

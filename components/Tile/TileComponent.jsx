@@ -49,7 +49,7 @@ export default function TileComponent(props) {
                                 </div>
                                 <div className="bx--col">
                                         <ClickableTile
-                                            href="#"
+                                            href="/biomedical-waste"
                                         ><h1>
                                                 BIOMEDICAL WASTE
                                         </h1>

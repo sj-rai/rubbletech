@@ -10,8 +10,8 @@ export default function Nav() {
     return (
         <div>
             <Header aria-label="IBM Platform Name">
-                <HeaderName href="/" prefix="IBM">
-                    [WM-APP]
+                <HeaderName href="/" prefix="">
+                    [RUBBLETECH]
                 </HeaderName>
                 {/*<HeaderNavigation aria-label="IBM [X]">*/}
                 {/*    <HeaderMenuItem href="#">*/}
