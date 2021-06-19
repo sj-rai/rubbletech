@@ -3,7 +3,7 @@ import {
     ContentSwitcher,
     Switch
 } from 'carbon-components-react'
-// import './content-switcher.scss'
+import './content-switcher.module.scss'
 
 export default function ContentSwitcherComponent(props) {
     let [selected, setSelected] = useState("hazardous")

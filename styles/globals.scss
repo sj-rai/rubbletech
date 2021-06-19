@@ -23,6 +23,7 @@ $carbon--theme: $carbon--theme--g100;
 @import '../node_modules/carbon-components/scss/components/button/button';
 @import '../node_modules/carbon-components/scss/components/content-switcher/content-switcher';
 @import '../node_modules/carbon-components/scss/components/tile/tile';
+@import '~@carbon/grid/scss/grid';
 $css--reset: true;
 .bx--content-switcher-btn {
   width: 18rem;
@@ -31,7 +32,9 @@ $css--reset: true;
 .bx--tile {
   //color: #ffffff;
   color: #ffffff;
-  width: 72rem;
-  height: 40rem;
+  width: 25.5rem;
+  height: 15.5rem;
   top: 2rem;
+  //margin-right: 2rem;
+  //margin-left: 2rem;
 }
