@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Header,
-    // HeaderMenuItem,
+    HeaderMenuItem,
     HeaderName,
     // HeaderNavigation
 } from 'carbon-components-react'
@@ -13,16 +13,17 @@ export default function Nav() {
                 <HeaderName href="/" prefix="">
                     [RUBBLETECH]
                 </HeaderName>
-                {/*<HeaderNavigation aria-label="IBM [X]">*/}
-                {/*    <HeaderMenuItem href="#">*/}
-                {/*        Share Food Items/leftovers*/}
-                {/*    </HeaderMenuItem>*/}
-                {/*    <HeaderMenuItem href="map">*/}
-                {/*        Excess Food Map*/}
-                {/*    </HeaderMenuItem>*/}
+                   <HeaderMenuItem href="#">
+                       Share Food Items/leftovers
+                   </HeaderMenuItem>
+                   <HeaderMenuItem href="map">
+                       Excess Food Map
+                   </HeaderMenuItem>
+                   <HeaderMenuItem href="/cost-calculator">
+                       Waste Cost Calculator
+                   </HeaderMenuItem>
                 {/*    <HeaderMenuItem href="#">Link 3</HeaderMenuItem>*/}
-                {/*    <HeaderMenuItem href="#">Info</HeaderMenuItem>*/}
-                {/*</HeaderNavigation>*/}
+                {/* /*    <HeaderMenuItem href="#">Info</HeaderMenuItem> */}
             </Header>
         </div>
     )
