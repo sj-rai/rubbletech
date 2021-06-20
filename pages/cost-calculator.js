@@ -121,18 +121,33 @@ async function calculate(totalAmount, setTotalAmount) {
     if (process.browser) {
       data = document.getElementById(id) ? document.getElementById(id).value : 0
     }
-    let amount = await axios.get(`/api/price/${id}?qty=${data}`)
-      .then((res) => {
-        // console.log("[res]", res)
-        // total = total + res.data.amount;
-        return res.data.amount
-        // console.log("[total]", total)
-        // setTotalAmount(total);
-      })
-      .catch((err) => {
-        console.log("[err]", err)
-      })
-    total = total + amount;
+    // console.log("[data]", data)
+    if(data > 0) {
+      let amount = await axios.get(`/api/price/${id}?qty=${data}`)
+          .then((res) => {
+            // console.log("[res]", res)
+            // total = total + res.data.amount;
+            return res.data.amount
+            // console.log("[total]", total)
+            // setTotalAmount(total);
+          })
+          .catch((err) => {
+            console.log("[err]", err)
+          })
+      total = total + amount;
+    }
+    // let amount = await axios.get(`/api/price/${id}?qty=${data}`)
+    //   .then((res) => {
+    //     // console.log("[res]", res)
+    //     // total = total + res.data.amount;
+    //     return res.data.amount
+    //     // console.log("[total]", total)
+    //     // setTotalAmount(total);
+    //   })
+    //   .catch((err) => {
+    //     console.log("[err]", err)
+    //   })
+    // total = total + amount;
   }
   // Promise.all(promises => {
   //   setTotalAmount(total);
