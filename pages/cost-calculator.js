@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Form,
   TextInput,
@@ -10,8 +10,10 @@ import {
 } from "carbon-components-react";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout/Layout";
+import axios from "axios";
 
-export default function costCalculator() {
+export default function CostCalculator() {
+  let [totalAmount, setTotalAmount] = useState(0);
   return (
     <Layout>
       <div className={`${styles.container} ${styles.costCalculator}`}>
@@ -93,16 +95,49 @@ export default function costCalculator() {
           <Button
             kind="primary"
             tabIndex={0}
-          // type="submit"
+            // type="submit"
+            onClick={() => calculate(totalAmount, setTotalAmount)}
           >
             Calculate
           </Button>
           <br /><br /><br />
           <div className={styles.calcpage}>
-            Total approximate cost:
+            Total approximate cost:{totalAmount}
           </div>
         </Form>
       </div>
     </Layout>
   );
+}
+
+async function calculate(totalAmount, setTotalAmount) {
+  console.log("[click]")
+  let data = ""
+  const ids = ['paper', 'metal', 'glass', 'plastic', 'ewaste', 'biode', 'other'];
+  let total = 0;
+
+
+  for (const id of ids) {
+    if (process.browser) {
+      data = document.getElementById(id) ? document.getElementById(id).value : 0
+    }
+    let amount = await axios.get(`/api/price/${id}?qty=${data}`)
+      .then((res) => {
+        // console.log("[res]", res)
+        // total = total + res.data.amount;
+        return res.data.amount
+        // console.log("[total]", total)
+        // setTotalAmount(total);
+      })
+      .catch((err) => {
+        console.log("[err]", err)
+      })
+    total = total + amount;
+  }
+  // Promise.all(promises => {
+  //   setTotalAmount(total);
+  //   Promise.resolve()
+  // })
+  setTotalAmount(total);
+  console.log("[totalAmount]", totalAmount)
 }
