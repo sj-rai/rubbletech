@@ -1,0 +1,11 @@
+---
+applications:
+  - name: rubble-tech
+    path: .
+    memory: 1G
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    routes:
+      - route: rubble-tech.mybluemix.net
+
+
+
