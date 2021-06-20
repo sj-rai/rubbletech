@@ -102,7 +102,7 @@ export default function CostCalculator() {
           </Button>
           <br /><br /><br />
           <div className={styles.calcpage}>
-            Total approximate cost:{totalAmount}
+            Total approximate cost: Rs. {totalAmount}
           </div>
         </Form>
       </div>
