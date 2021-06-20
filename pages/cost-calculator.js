@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   Form,
   TextInput,
@@ -110,39 +110,30 @@ export default function CostCalculator() {
   );
 }
 
-function calculate(totalAmount, setTotalAmount) {
+async function calculate(totalAmount, setTotalAmount) {
   console.log("[click]")
   let data = ""
-  // if(process.browser) {
-  //   dataPaper = document.getElementById("paper")?document.getElementById("paper").value:""
-  // }
-  // let data = document.getElementById("paper")?document.getElementById("paper").value:""
-  // console.log("[dataPaper]", dataPaper);
-  let ids = ['paper', 'metal'];
+  const ids = ['paper', 'metal', 'glass', 'plastic', 'ewaste', 'biode', 'other'];
   let total = 0;
-  let promises = []
-  // promises = ids.map(async (id) => {
-  ids.forEach(async (id) => {
 
-    if(process.browser) {
-      data = document.getElementById(id)?document.getElementById(id).value:""
+
+  for (const id of ids) {
+    if (process.browser) {
+      data = document.getElementById(id) ? document.getElementById(id).value : 0
     }
     let amount = await axios.get(`/api/price/${id}?qty=${data}`)
-        .then((res) => {
-          // console.log("[res]", res)
-          // total = total + res.data.amount;
-          return res.data.amount
-          // console.log("[total]", total)
-          // setTotalAmount(total);
-        })
-        .catch((err) => {
-          console.log("[err]", err)
-        })
-    console.log("[amount]", amount)
-    total = total+amount;
-    console.log("[total]", total)
-  })
-  console.log("[here]")
+      .then((res) => {
+        // console.log("[res]", res)
+        // total = total + res.data.amount;
+        return res.data.amount
+        // console.log("[total]", total)
+        // setTotalAmount(total);
+      })
+      .catch((err) => {
+        console.log("[err]", err)
+      })
+    total = total + amount;
+  }
   // Promise.all(promises => {
   //   setTotalAmount(total);
   //   Promise.resolve()
