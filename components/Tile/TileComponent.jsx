@@ -22,7 +22,7 @@ export default function TileComponent(props) {
             </ClickableTile>
           </div>
           <div className="bx--col">
-            <ClickableTile href="#">
+            <ClickableTile href="/recyclable-waste">
               <div className={styles.icons}>
                 <Image src="/trash.png" alt="trash" layout={"fill"} />
               </div>
@@ -33,7 +33,7 @@ export default function TileComponent(props) {
             </ClickableTile>
           </div>
           <div className="bx--col">
-            <ClickableTile href="#">
+            <ClickableTile href="/paper-plastic">
               <div className={styles.icons}>
                 <Image
                   src="/recycle-bin.png"
@@ -42,7 +42,7 @@ export default function TileComponent(props) {
                 />
               </div>
               <h2>
-                <div className={styles.text}>HOUSEHOLD WASTE</div>
+                <div className={styles.text}>PLASTIC & PACKAGING</div>
               </h2>
               {/*Content about this here*/}
             </ClickableTile>
@@ -76,7 +76,7 @@ export default function TileComponent(props) {
             </ClickableTile>
           </div>
           <div className="bx--col">
-            <ClickableTile href="#">
+            <ClickableTile href="/e-waste">
               {/*<Image src="/ewaste.png" alt="E-Waste" width={"200px"} height={"200px"} />*/}
               <div className={styles.icons}>
                 <Image src="/ewaste.png" alt="ewaste" layout={"fill"} />
@@ -90,53 +90,6 @@ export default function TileComponent(props) {
           </div>
         </div>
       </div>
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*><h1>*/}
-      {/*    {props.content}*/}
-      {/*</h1>*/}
-      {/*    /!*Content about this here*!/*/}
-      {/*</ClickableTile>*/}
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*><h1>*/}
-      {/*    {props.content}*/}
-      {/*</h1>*/}
-      {/*    /!*Content about this here*!/*/}
-      {/*</ClickableTile>*/}
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*><h1>*/}
-      {/*    {props.content}*/}
-      {/*</h1>*/}
-      {/*    /!*Content about this here*!/*/}
-      {/*</ClickableTile>*/}
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*><h1>*/}
-      {/*    {props.content}*/}
-      {/*</h1>*/}
-      {/*    /!*Content about this here*!/*/}
-      {/*</ClickableTile>*/}
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*><h1>*/}
-      {/*    {props.content}*/}
-      {/*</h1>*/}
-      {/*    /!*Content about this here*!/*/}
-      {/*</ClickableTile>*/}
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*><h1>*/}
-      {/*    {props.content}*/}
-      {/*</h1>*/}
-      {/*    /!*Content about this here*!/*/}
-      {/*</ClickableTile>*/}
-      {/*<ClickableTile*/}
-      {/*    href="#"*/}
-      {/*>*/}
-      {/*    Chemical waste*/}
-      {/*</ClickableTile>*/}
     </div>
   );
 }

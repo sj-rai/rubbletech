@@ -2,9 +2,14 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import styles from "../styles/Home.module.scss";
 import { Accordion, AccordionItem } from "carbon-components-react";
+import Image from "next/dist/client/image";
+import hazardous from "../public/hazardous.png"
 export default function BiomedicalWaste() {
   return (
     <Layout>
+      <div className={styles.container1}>
+        <Image height='400px' width='1000px' alt='food-waste' src={hazardous} />
+      </div>
       <div className={`${styles.container} ${styles.pages}`}>
         {/*<br />*/}
         {/*<h1>Hazardous Waste</h1>*/}
@@ -123,7 +128,39 @@ export default function BiomedicalWaste() {
           </AccordionItem>
           <AccordionItem title="Contacts">
             <p>
-
+              <p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Zone</th>
+                      <th>Vendor</th>
+                      <th>Contact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mahadevapura and East</td>
+                      <td>Anu Autoclave</td>
+                      <td>9008684839</td>
+                    </tr>
+                    <tr>
+                      <td>South and Bomanahalli</td>
+                      <td>Maridi Eco Industries</td>
+                      <td>9845162041</td>
+                    </tr>
+                    <tr>
+                      <td>West and RR Nagar</td>
+                      <td>Medicare/Sembramky</td>
+                      <td>7760978790</td>
+                    </tr>
+                    <tr>
+                      <td>Dasarahalli and Yelahanka</td>
+                      <td>Prajwal Management Systems</td>
+                      <td>9901773131</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
             </p>
           </AccordionItem>
         </Accordion>
