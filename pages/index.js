@@ -7,7 +7,6 @@ import Layout from "../components/Layout/Layout";
 import Nav from "../components/Nav/Nav";
 import TileComponent from "../components/Tile/TileComponent";
 import ContentSwitcherComponent from "../components/ContentSwitcher/ContentSwitcherComponent";
-require('dotenv').config()
 export default function Home() {
   let [contentForTile, setContentForTile] = useState("Biodegradable waste");
   let receiveTileContent = (value) => {
