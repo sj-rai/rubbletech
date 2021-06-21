@@ -13,29 +13,35 @@ export default function TileComponent(props) {
             <ClickableTile href="#">
               {/*<BIOSVG width={50} height={100} fill='#fff'/>*/}
               <div className={styles.icons}>
-                <Image src="/biohazard.svg" alt="E-Waste" layout={"fill"} />
+                <Image src="/biohazard.svg" alt="biohazard" layout={"fill"} />
               </div>
-              <h1>
+              <h2>
                 <div className={styles.text}>HAZARDOUS WASTE</div>
-              </h1>
+              </h2>
               {/*Content about this here*/}
             </ClickableTile>
           </div>
           <div className="bx--col">
             <ClickableTile href="#">
-              <h1>
+              <div className={styles.icons}>
+                <Image src="/trash.png" alt="trash" layout={"fill"} />
+              </div>
+              <h2>
                 <div className={styles.text}>RECYCLABLE WASTE</div>
-              </h1>
+              </h2>
               {/*Content about this here*/}
             </ClickableTile>
           </div>
           <div className="bx--col">
             <ClickableTile href="#">
-              <h1>
+              <div className={styles.icons}>
+                <Image src="/recycle-bin.png" alt="recycle-bin" layout={"fill"} />
+              </div>
+              <h2>
                 <div className={styles.text}>
                   HOUSEHOLD WASTE
                 </div>
-              </h1>
+              </h2>
               {/*Content about this here*/}
             </ClickableTile>
           </div>
@@ -43,26 +49,35 @@ export default function TileComponent(props) {
         <div className="bx--row">
           <div className="bx--col">
             <ClickableTile href="#">
-              <h1>
+              <div className={styles.icons}>
+                <Image src="/waste.png" alt="waste" layout={"fill"} />
+              </div>
+              <h2>
                 <div className={styles.text}>FOOD WASTE</div>
-              </h1>
+              </h2>
               {/*Content about this here*/}
             </ClickableTile>
           </div>
           <div className="bx--col">
             <ClickableTile href="/biomedical-waste">
-              <h1>
+              <div className={styles.icons}>
+                <Image src="/biomedical-waste.png" alt="biomedical-waste" layout={"fill"} />
+              </div>
+              <h2>
                 <div className={styles.text}>BIOMEDICAL WASTE</div>
-              </h1>
+              </h2>
               {/*Content about this here*/}
             </ClickableTile>
           </div>
           <div className="bx--col">
             <ClickableTile href="#">
               {/*<Image src="/ewaste.png" alt="E-Waste" width={"200px"} height={"200px"} />*/}
-              <h1>
+              <div className={styles.icons}>
+                <Image src="/ewaste.png" alt="ewaste" layout={"fill"} />
+              </div>
+              <h2>
                 <div className={styles.text}>E-WASTE</div>
-              </h1>
+              </h2>
               {/*<Image src="/e-waste.jpg" alt="E-Waste" width={"200px"} height={"200px"} />*/}
               {/*Content about this here*/}
             </ClickableTile>
