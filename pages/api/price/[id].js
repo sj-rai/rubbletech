@@ -10,14 +10,14 @@ export default function handler(req, res) {
     const discovery = new DiscoveryV1({
         version: '2019-04-30',
         authenticator: new IamAuthenticator({
-            apikey: '5uRk-WEXT3grGzNMDFhUdYAbSviQOtDkoWDuisZEc2-S',
+            apikey: process.env.API_KEY,
         }),
-        serviceUrl: 'https://api.eu-gb.discovery.watson.cloud.ibm.com/instances/15cf2273-f2a2-442c-ab9b-845f78cec2c6',
+        serviceUrl: process.env.SERVICE_URL,
     });
 
     const queryParams = {
-        environmentId: 'd1c1972b-1100-4d86-83ed-46c86efdd719',
-        collectionId: '2bd970fd-dde2-4336-a27e-8d8b6fa5b3fd',
+        environmentId: process.env.ENV_ID,
+        collectionId: process.env.COLLECTION_ID,
         naturalLanguageQuery: id,
         passages: true
     };
