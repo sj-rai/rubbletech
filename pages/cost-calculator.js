@@ -7,6 +7,8 @@ import {
   Select,
   Button,
   SelectItem,
+  Loading,
+  InlineLoading
 } from "carbon-components-react";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout/Layout";
@@ -14,6 +16,7 @@ import axios from "axios";
 
 export default function CostCalculator() {
   let [totalAmount, setTotalAmount] = useState(0);
+  let [spinner, setSpinner] = useState(false)
   return (
     <Layout>
       <div className={`${styles.container} ${styles.costCalculator}`}>
@@ -96,13 +99,22 @@ export default function CostCalculator() {
             kind="primary"
             tabIndex={0}
             // type="submit"
-            onClick={() => calculate(totalAmount, setTotalAmount)}
+            onClick={() => calculate(totalAmount, setTotalAmount, spinner, setSpinner)}
           >
             Calculate
           </Button>
           <br /><br /><br />
+          {/*<Loading description="Active loading indicator" withOverlay={false} small />*/}
           <div className={styles.calcpage}>
-            Total approximate cost:{totalAmount}
+            <div className={styles.totalText} >
+            Total approximate cost:
+            </div>
+            {spinner === true &&
+              <InlineLoading/>
+            }
+            {spinner === false &&
+              totalAmount
+            }
           </div>
         </Form>
       </div>
@@ -110,7 +122,8 @@ export default function CostCalculator() {
   );
 }
 
-async function calculate(totalAmount, setTotalAmount) {
+async function calculate(totalAmount, setTotalAmount, spinner, setSpinner) {
+  setSpinner(true);
   console.log("[click]")
   let data = ""
   const ids = ['paper', 'metal', 'glass', 'plastic', 'e-waste', 'bio-degradable', 'other'];
@@ -153,6 +166,7 @@ async function calculate(totalAmount, setTotalAmount) {
   //   setTotalAmount(total);
   //   Promise.resolve()
   // })
+  setSpinner(false)
   setTotalAmount(total);
   console.log("[totalAmount]", totalAmount)
 }
