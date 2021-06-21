@@ -107,14 +107,16 @@ export default function CostCalculator() {
           {/*<Loading description="Active loading indicator" withOverlay={false} small />*/}
           <div className={styles.calcpage}>
 
-            <div className={styles.totalText} >
-            Total approximate cost:
+            <div className={styles.totalText}>
+              Total approximate cost:
             </div>
             {spinner === true &&
               <InlineLoading/>
             }
             {spinner === false &&
-              totalAmount
+              <div>
+                Rs. {totalAmount}
+              </div>
             }
           </div>
         </Form>
