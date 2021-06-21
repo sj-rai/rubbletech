@@ -64,7 +64,7 @@ export default function CostCalculator() {
           </div>
           <div style={{ marginBottom: "2rem" }}>
             <NumberInput
-              id="ewaste"
+              id="e-waste"
               // invalid="Invalid error message."
               label="E-waste"
               placeholder="in kg"
@@ -74,7 +74,7 @@ export default function CostCalculator() {
           </div>
           <div style={{ marginBottom: "2rem" }}>
             <NumberInput
-              id="biode"
+              id="bio-degradable"
               // invalid="Invalid error message."
               label="Bio-degradable waste"
               placeholder="in kg"
@@ -113,7 +113,7 @@ export default function CostCalculator() {
 async function calculate(totalAmount, setTotalAmount) {
   console.log("[click]")
   let data = ""
-  const ids = ['paper', 'metal', 'glass', 'plastic', 'ewaste', 'biode', 'other'];
+  const ids = ['paper', 'metal', 'glass', 'plastic', 'e-waste', 'bio-degradable', 'other'];
   let total = 0;
 
 
