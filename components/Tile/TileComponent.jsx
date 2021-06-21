@@ -10,7 +10,7 @@ export default function TileComponent(props) {
       <div className="bx--grid bx--grid--condensed">
         <div className="bx--row">
           <div className="bx--col">
-            <ClickableTile href="#">
+            <ClickableTile href="/hazardous-waste">
               {/*<BIOSVG width={50} height={100} fill='#fff'/>*/}
               <div className={styles.icons}>
                 <Image src="/biohazard.svg" alt="biohazard" layout={"fill"} />
@@ -35,12 +35,14 @@ export default function TileComponent(props) {
           <div className="bx--col">
             <ClickableTile href="#">
               <div className={styles.icons}>
-                <Image src="/recycle-bin.png" alt="recycle-bin" layout={"fill"} />
+                <Image
+                  src="/recycle-bin.png"
+                  alt="recycle-bin"
+                  layout={"fill"}
+                />
               </div>
               <h2>
-                <div className={styles.text}>
-                  HOUSEHOLD WASTE
-                </div>
+                <div className={styles.text}>HOUSEHOLD WASTE</div>
               </h2>
               {/*Content about this here*/}
             </ClickableTile>
@@ -48,7 +50,7 @@ export default function TileComponent(props) {
         </div>
         <div className="bx--row">
           <div className="bx--col">
-            <ClickableTile href="#">
+            <ClickableTile href="/food-waste">
               <div className={styles.icons}>
                 <Image src="/waste.png" alt="waste" layout={"fill"} />
               </div>
@@ -61,7 +63,11 @@ export default function TileComponent(props) {
           <div className="bx--col">
             <ClickableTile href="/biomedical-waste">
               <div className={styles.icons}>
-                <Image src="/biomedical-waste.png" alt="biomedical-waste" layout={"fill"} />
+                <Image
+                  src="/biomedical-waste.png"
+                  alt="biomedical-waste"
+                  layout={"fill"}
+                />
               </div>
               <h2>
                 <div className={styles.text}>BIOMEDICAL WASTE</div>

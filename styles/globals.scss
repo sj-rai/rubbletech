@@ -30,6 +30,7 @@ $carbon--theme: $carbon--theme--g100;
 @import '../node_modules/carbon-components/scss/components/select/select';
 @import '../node_modules/carbon-components/scss/components/loading/loading';
 @import '../node_modules/carbon-components/scss/components/inline-loading/inline-loading';
+@import '../node_modules/carbon-components/scss/components/accordion/accordion';
 
 
 
@@ -55,6 +56,9 @@ $css--reset: true;
   display: inline-block;
   width: 20%;
 }
+.bx--accordion__title {
+  font-size: 1.370rem;
+}
 td {
   padding: 10px;
   border: 1px solid white;
@@ -62,4 +66,16 @@ td {
 th {
   padding: 10px;
   border: 1px solid white;
+}
+ol, ul {
+  list-style: auto;
+}
+b {
+  font-weight: bold;
+}
+//p {
+//  font-size: 40px;
+//}
+.bx--accordion__content > p{
+  font-size: 16px;
 }

@@ -1,5 +1,5 @@
 const path = require("path");
-require('dotenv').config()
+require("dotenv").config();
 
 module.exports = {
   reactStrictMode: true,
@@ -10,6 +10,6 @@ module.exports = {
     API_KEY: process.env.API_KEY,
     SERVICE_URL: process.env.SERVICE_URL,
     ENV_ID: process.env.ENV_ID,
-    COLLECTION_ID: process.env.COLLECTION_ID
+    COLLECTION_ID: process.env.COLLECTION_ID,
   },
 };
