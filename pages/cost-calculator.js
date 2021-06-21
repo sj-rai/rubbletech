@@ -116,8 +116,6 @@ export default function CostCalculator() {
             {spinner === false &&
               totalAmount
             }
-            Total approximate cost: Rs. {totalAmount}
-
           </div>
         </Form>
       </div>
