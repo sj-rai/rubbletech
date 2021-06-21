@@ -33,7 +33,7 @@ export default function TileComponent(props) {
             <ClickableTile href="#">
               <h1>
                 <div className={styles.text}>
-                  LIQUID OR SOLID HOUSEHOLD WASTE
+                  HOUSEHOLD WASTE
                 </div>
               </h1>
               {/*Content about this here*/}
@@ -44,7 +44,7 @@ export default function TileComponent(props) {
           <div className="bx--col">
             <ClickableTile href="#">
               <h1>
-                <div className={styles.text}>GREEN WASTE</div>
+                <div className={styles.text}>FOOD WASTE</div>
               </h1>
               {/*Content about this here*/}
             </ClickableTile>
