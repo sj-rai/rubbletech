@@ -28,6 +28,10 @@ $carbon--theme: $carbon--theme--g100;
 @import '../node_modules/carbon-components/scss/components/number-input/number-input';
 @import '../node_modules/carbon-components/scss/components/button/button';
 @import '../node_modules/carbon-components/scss/components/select/select';
+@import '../node_modules/carbon-components/scss/components/loading/loading';
+@import '../node_modules/carbon-components/scss/components/inline-loading/inline-loading';
+
+
 
 @import '~@carbon/grid/scss/grid';
 $css--reset: true;
@@ -46,6 +50,10 @@ $css--reset: true;
 }
 .bx--label {
   font-size: 20px;
+}
+.bx--inline-loading {
+  display: inline-block;
+  width: 20%;
 }
 td {
   padding: 10px;

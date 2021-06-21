@@ -15,11 +15,15 @@
 }
 
 .calcpage{
+  display: flex;
+  flex: auto;
   padding: 0 4.5rem;
   color: #ffffff;
   font-size: 20px;
 }
-
+.totalText {
+  width: max-content;
+}
 .pages {
   padding: 0 4.5rem;
   color: #ffffff;
