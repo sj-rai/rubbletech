@@ -24,6 +24,9 @@ export default function Nav() {
           <HeaderMenuItem href="/cost-calculator">
             Waste Cost Calculator
           </HeaderMenuItem>
+          <HeaderMenuItem href="/subscribe">
+            Subscribe
+          </HeaderMenuItem>
         </HeaderNavigation>
 
         {/*    <HeaderMenuItem href="#">Link 3</HeaderMenuItem>*/}
