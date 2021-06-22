@@ -4,9 +4,10 @@ import styles from "../styles/Home.module.scss";
 import React, { useState } from "react";
 
 import Layout from "../components/Layout/Layout";
-import Nav from "../components/Nav/Nav";
 import TileComponent from "../components/Tile/TileComponent";
 import ContentSwitcherComponent from "../components/ContentSwitcher/ContentSwitcherComponent";
+import Chat from "../components/Chat/Chat";
+
 export default function Home() {
   let [contentForTile, setContentForTile] = useState("Biodegradable waste");
   let receiveTileContent = (value) => {
@@ -25,6 +26,7 @@ export default function Home() {
         {/*/>*/}
 
         <TileComponent content={contentForTile} />
+        <Chat />
         {/*</Layout>*/}
       </div>
     </Layout>
