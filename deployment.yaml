@@ -1,0 +1,41 @@
+kind: Deployment # kubernetes deployment definition
+apiVersion: apps/v1
+metadata:
+  name: rubbletech
+  namespace: default
+spec:
+  selector: # this service selects all pods with the label, app=walkmebatchupload
+    matchLabels:
+      app: rubbletech
+  replicas: 1 # the number of pods we wish to run
+#  revisionHistoryLimit: 5
+#  strategy:
+#    rollingUpdate: # controls update strategy
+#      maxSurge: 1
+#      maxUnavailable: 1
+#    type: RollingUpdate
+  template:
+    metadata:
+      name: rubbletech
+      labels:
+        app: rubbletech # this label is used to select the app pods in the service definition above
+    spec:
+      containers: # list of containers to run within the pod. We'll run just a single container
+        - name: rubbletech
+          image: uk.icr.io/rubbletech-namespace/rubbletech:latest # the image name of the movies service.
+          imagePullPolicy: Always
+          ports: # the ports that we want exposed on the IP assigned to the pod
+            - containerPort: 3000 # the dropwizard application port
+---
+kind: Service # kubernetes service definition for streaming
+apiVersion: v1
+#kind: Service
+metadata:
+  name: rubbletech
+spec:
+  type: NodePort
+  selector:
+    app: rubbletech
+  ports:
+    - port: 3000
+      nodePort: 31111
