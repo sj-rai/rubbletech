@@ -21,20 +21,18 @@ export default function Subscribe() {
                     <br />
                     <br />
                     <br />
-
-                    <Button
-                        kind="primary"
-                        tabIndex={0}
-                        onClick={isUserSubscribed(subscribed, setSubscribed)}
-                    >
-                        Subscribe
-                    </Button>
-                    {
-                        subscribed &&
+                    { console.log("[subscribed]", subscribed)}
+                    { subscribed === false &&
+                        <Button
+                            kind="primary"
+                            tabIndex={0}
+                            onClick={() => {isUserSubscribed(subscribed, setSubscribed)}}
+                        >
+                            Subscribe
+                        </Button>
+                    }
+                    { subscribed === true &&
                         <div className={styles.container1} >
-                            <br />
-                            <br />
-                            <br />
                             Welcome to the RubbleTech Family! You are now subscribed!
                         </div>
                     }

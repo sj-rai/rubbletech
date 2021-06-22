@@ -26,12 +26,12 @@ export default function BiomedicalWaste() {
             <p>
               <ol>
                 <li>
-                  <b className="term">Donate to NGOs</b>: A number of NGOs in the education space have a need for electronics. NGOs often teach basic computer skills to young children and women from underprivileged backgrounds. To impart computer skills, such NGOs don't need the newest machines; even decades old computers that use GUI are useful to them. When a computer is donated to an NGO, not only does it not turn into hazardous e-waste, but it is used to teach and open vistas of new opportunities to many.
+                  <b className="term">Donate to NGOs</b>: A number of NGOs in the education space have a need for electronics. NGOs often teach basic computer skills to young children and women from underprivileged backgrounds. To impart computer skills, such NGOs do not need the newest machines; even decades old computers that use GUI are useful to them. When a computer is donated to an NGO, not only does it not turn into hazardous e-waste, but it is used to teach and open vistas of new opportunities to many.
                 </li>
                 <br />
                 <li>
                   <b className="term">Give Electronics to Certified E-Waste Recycler</b>:
-                  The hazards posed by e-waste are real and the unorganised sector which often strips e-waste of its most useful parts compounds the problems posed by it. Workers in the informal sector who remove precious base metals from e-waste work in hazardous conditions. While working they are surrounded by toxic fumes against which they haven't been provided adequate protection.
+                  The hazards posed by e-waste are real and the unorganised sector which often strips e-waste of its most useful parts compounds the problems posed by it. Workers in the informal sector who remove precious base metals from e-waste work in hazardous conditions. While working they are surrounded by toxic fumes against which they have not been provided adequate protection.
                 </li>
                 <br />
                 <li>
