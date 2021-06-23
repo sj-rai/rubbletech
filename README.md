@@ -4,13 +4,17 @@ Repo for CFC 2021 Project
 
 ### Short Description
 
-Created a technological solution to guide and aware people to deal with particular type of waste appropriately which would reduce the amount of untreated waste in the environment
-
-App aims to increase awareness of disposal techniques for different types of wastes, promotes recycling, sharing.
+This app aims to increase awareness of disposal techniques for different types of wastes, promotes recycling, sharing.
 
 ### The Architecture
 
 ![Architecture](https://github.com/sj-rai/rubbletech/blob/master/public/rubbletech-archi.jpeg?raw=true)
+
+- The app is build on Reactjs using Nextjs framework wrapped in carbon components.
+- The app is deployed on Kubernetes using IBM Cloud Container Registry services.
+- Watson Discovery is used to crawl through major web sites and provide relevant information. Additionally, it is used to calculate market value of different types of waste items. This predicts approximate costs of selling waste items and encourages users to sell wastes.
+- Watson Assistant for quick guidance and to answer quick doubts.
+- Twilio for integrating push notifications, reminders for donations happening nearby.
 
 ### Long Description
 
@@ -20,9 +24,18 @@ App aims to increase awareness of disposal techniques for different types of was
 
 <img src="https://github.com/sj-rai/rubbletech/blob/master/public/Roadmap.png?raw=true" alt="drawing" width="720" height="720"/>)
 
-
+- Stage 1: First stage of this project deployed on a free tier IBM Cloud Kubernetes cluster. We aim to deploy with a suitable domain.
+- Stage 2: Collaborate and coordinate with external vendors who run businesses to collect garbage.
+- Stage 3: Sending reminders, reports, and allowing users to subscribe to get alerted about drives, donation camps, garbage collection services.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### IBM Cloud services used:
+
+- [IBM Cloud Container Registry](https://cloud.ibm.com/docs/containers)
+- [Watson Assistant](https://cloud.ibm.com/docs/assistant)
+- [Watson Discovery](https://cloud.ibm.com/docs/discovery)
+
 
 ### Getting Started
 
