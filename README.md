@@ -2,6 +2,8 @@
 
 Repo for CFC 2021 Project
 
+Application hosted in IBMCloud http://169.57.43.42:31111/
+
 ### Short Description
 
 This app aims to increase awareness of disposal techniques for different types of wastes, promotes recycling, sharing.
