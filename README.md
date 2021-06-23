@@ -18,7 +18,7 @@ App aims to increase awareness of disposal techniques for different types of was
 
 ### Project Roadmap
 
-![Roadmap](https://github.com/sj-rai/rubbletech/blob/master/public//Roadmap.png?raw=true)
+<img src="https://github.com/sj-rai/rubbletech/blob/master/public/Roadmap.png?raw=true" alt="drawing" width="720" height="720"/>)
 
 
 
