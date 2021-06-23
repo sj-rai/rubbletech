@@ -10,7 +10,7 @@ App aims to increase awareness of disposal techniques for different types of was
 
 ### The Architecture
 
-![Architecture](https://github.com/sj-rai/rubbletech/blob/master/rubbletech-archi.jpeg?raw=true)
+![Architecture](https://github.com/sj-rai/rubbletech/blob/master/public/rubbletech-archi.jpeg?raw=true)
 
 ### Long Description
 
@@ -18,7 +18,7 @@ App aims to increase awareness of disposal techniques for different types of was
 
 ### Project Roadmap
 
-![Roadmap](https://github.com/sj-rai/rubbletech/blob/master/Roadmap.png?raw=true)
+![Roadmap](https://github.com/sj-rai/rubbletech/blob/master/public//Roadmap.png?raw=true)
 
 
 
