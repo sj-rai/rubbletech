@@ -26,7 +26,7 @@ This app aims to increase awareness of disposal techniques for different types o
 
 ### Project Roadmap
 
-<img src="https://github.com/sj-rai/rubbletech/blob/master/public/Roadmap.png?raw=true" alt="drawing"/>)
+<img src="https://github.com/sj-rai/rubbletech/blob/master/public/Roadmap.png?raw=true" alt="drawing"/>
 
 - Stage 1: First stage of this project deployed on a free tier IBM Cloud Kubernetes cluster. We aim to deploy with a suitable domain.
 - Stage 2: Collaborate and coordinate with external vendors who run businesses to collect garbage.
