@@ -2,8 +2,6 @@
 
 Repo for CFC 2021 Project
 
-Application hosted in IBMCloud http://169.57.43.42:31111/
-
 ### Short Description
 
 This app aims to increase awareness of disposal techniques for different types of wastes, promotes recycling, sharing.
@@ -18,9 +16,9 @@ This app aims to increase awareness of disposal techniques for different types o
 - Watson Assistant for quick guidance and to answer quick doubts.
 - Twilio for integrating push notifications, reminders for donations happening nearby.
 
-### Video
+### Demo Video
 
-[<img width="545" alt="Screenshot 2021-06-23 at 12 01 44 PM" src="https://user-images.githubusercontent.com/40350484/123047524-04859180-d41b-11eb-8185-3ec1d88e6f6b.png">](https://www.youtube.com/watch?v=OSzom0AOo0o)
+[<img width="1056" alt="Screenshot 2021-06-23 at 12 14 57 PM" src="https://user-images.githubusercontent.com/40350484/123049027-b3769d00-d41c-11eb-8e59-f7144b08e26a.png">](https://ibm.box.com/s/xbhuybvaz9qbshms7e758zoob9szy6oj)
 
 ### Long Description
 
@@ -28,7 +26,7 @@ This app aims to increase awareness of disposal techniques for different types o
 
 ### Project Roadmap
 
-<img src="https://github.com/sj-rai/rubbletech/blob/master/public/Roadmap.png?raw=true" alt="drawing" width="720" height="720"/>)
+<img src="https://github.com/sj-rai/rubbletech/blob/master/public/Roadmap.png?raw=true" alt="drawing"/>)
 
 - Stage 1: First stage of this project deployed on a free tier IBM Cloud Kubernetes cluster. We aim to deploy with a suitable domain.
 - Stage 2: Collaborate and coordinate with external vendors who run businesses to collect garbage.
