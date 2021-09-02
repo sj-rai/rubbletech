@@ -2,7 +2,7 @@
 
 Repo for CFC 2021 Project
 
-The application hosted in IBMCloud http://169.57.43.42:31111/
+The application hosted in IBMCloud http://169.51.204.190:31111/
 
 ### Short Description
 
